@@ -35,7 +35,5 @@ class TestScaledDotProductAttention(unittest.TestCase):
         attention_sum = attention_weights.sum(dim=-1)
         this.assertTrue(allclose(attention_sum, ones_like(attention_sum), atol=1e-5))
 
-
-
 if __name__ == "__main__":
     unittest.main()
